@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tech Store</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header container">
+				<h1 class="logo">Tech Store</h1>
+				<nav class="navbar">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="#">Inicio</a></li>
+						<li class="nav-item"><a href="#">Acerca de</a></li>
+						<li class="nav-item"><a href="#">Servicios</a></li>
+						<li class="nav-item"><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<form name="buscador" action="#" method="post">
+			<input
+				id="BUSCADOR"
+				class=""
+				name="buscador"
+				autocomplete="off"
+				placeholder="¿Qué producto desea buscar?"
+				required=""
+				type="text"
+			/>
+		</form>
+
+		<span id="nolog1" class="no_logueado" style="">
+			<a href="">
+				<img
+					src="https://www.marstech.com.ar/Temp/App_WebSite/App_PictureFiles/ico_usuario.svg"
+					height="25"
+				/>
+			</a>
+		</span>
+		<span id="log1" class="logueado" style="display: none">
+			<a href="">
+				<!-- aca se van a poder ver los favoritos asi que hay que enlazarlo a eso-->
+				<i class="fa fa-heart" title="Ver Mis Favoritos"></i>
+			</a>
+			<a
+				href=""
+				data-placement="top"
+				title=""
+				alt="Bienvenido §NombreCliente§"
+				data-original-title="Bienvenido §NombreCliente§"
+			>
+				<!-- aca se puede ver el perfil de usuario -->
+				<img
+					src="https://www.marstech.com.ar/Temp/App_WebSite/App_PictureFiles/ico_usuario2.svg"
+					style="position: relative; top: -2px; max-width: 30px"
+				/>
+			</a>
+		</span>
+		<span class="carritotop">
+			<a class="ircarrito" href="">
+				<!-- aca va el enlace al carrito -->
+				<img
+					src="https://www.marstech.com.ar/Temp/App_WebSite/App_PictureFiles/ico_carrito.svg"
+					height="25"
+				/>
+				<span id="contador" class="cantidad_carrito">0</span>
+			</a>
+		</span>
+
+		<section id="iconos_home">
+			<div class="container">
+				<div class="icono">
+					<a href="">
+						<img
+							class="img-responsive"
+							src="https://www.marstech.com.ar/Temp/App_WebSite/App_PictureFiles/equipos-armados.png"
+							alt="Equipos armados"
+						/>
+					</a>
+					<span>Equipos armados</span>
+				</div>
+				<div class="icono">
+					<a href="">
+						<img
+							class="img-responsive"
+							src="https://www.marstech.com.ar/Temp/App_WebSite/App_PictureFiles/notebook.png"
+							alt="Notebooks"
+						/>
+					</a>
+					<span>Notebooks</span>
+				</div>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
